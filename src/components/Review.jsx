@@ -45,7 +45,7 @@ const Review = ({ reviews, rating }) => {
 
                                     <div className="space-y-0.5">
                                         <p className="text-base font-semibold text-gray-900">{review.reviewerName}</p>
-                                        <p className="text-sm font-normal text-gray-500 ">{review?.date}</p>
+                                        <p className="text-sm font-normal text-gray-500 ">{review?.date && new Date(review?.date).toLocaleDateString()}</p>
                                     </div>
                                 </div>
                                 <div className="mt-4 min-w-0 flex-1 space-y-4 sm:mt-0">

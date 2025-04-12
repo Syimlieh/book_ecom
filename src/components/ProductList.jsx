@@ -35,7 +35,7 @@ const ProductList = () => {
     const filteredProducts = products.filter(
         (product) =>
             product.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            product.brand?.toLowerCase().includes(searchTerm.toLowerCase())
+            product.category?.toLowerCase().includes(searchTerm.toLowerCase())
     );
     return (
         <div id="products" className='flex flex-col gap-20 items-center pt-24 relative'>
