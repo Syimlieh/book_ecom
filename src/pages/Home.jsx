@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
+import HeroSection from '../components/HeroSection';
+import LoadingSpinner from '../components/ui/LoadingSpinner';
 
+const ProductList = lazy(() => import('../components/ProductList'));
 const Home = () => {
     return (
-        <div>
-            <h1>Welcome to Homepage</h1>
-        </div>
+        <>
+            <HeroSection />
+            <Suspense fallback={<LoadingSpinner center={true} />}>
+                <ProductList />
+            </Suspense>
+        </>
     )
 }
 
-export default Home
+export default Home;

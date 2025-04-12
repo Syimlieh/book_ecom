@@ -1,0 +1,4 @@
+export const PAYMENT_METHODS = {
+    UPI: "UPI",
+    PAY_ON_DELIVERY: "PAY_ON_DELIVERY"
+};
