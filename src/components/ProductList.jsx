@@ -39,7 +39,7 @@ const ProductList = () => {
     );
     return (
         <div id="products" className='flex flex-col gap-20 items-center pt-24 relative'>
-            <div className='absolute top-16 right-8'>
+            <div className='absolute top-8 md:top-16 right-8'>
                 <ProductSearch />
             </div>
             {
